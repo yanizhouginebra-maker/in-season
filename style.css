@@ -17,3 +17,7 @@ body{min-height:100svh;display:flex;flex-direction:column;background:#faf9f5;col
 /* Original pigment, independently isolated; no sprite cropping or color filters. */
 .art.s0,.art.s1,.art.s2,.art.s3{background-size:contain;background-position:center;background-repeat:no-repeat;filter:none;mix-blend-mode:normal;mask:none;-webkit-mask:none}.art.s0{background-image:url('season-original-0.png')}.art.s1{background-image:url('season-original-1.png')}.art.s2{background-image:url('season-original-2.png')}.art.s3{background-image:url('season-original-3.png')}
 .seasons .season .art.s3{background-image:url('winter-pine-home.png')}
+/* Draw the brand mark as vector lines so mobile systems cannot replace it with an emoji. */
+.brand .mark{width:26px;height:26px;margin-right:3px;flex:0 0 26px;overflow:visible;color:#71866a}
+.brand .mark path{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;vector-effect:non-scaling-stroke}
+@media(max-width:700px){.brand .mark{width:24px;height:24px;flex-basis:24px}}
